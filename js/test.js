@@ -4,7 +4,7 @@ function ShowAlart() {
     }
 
 $(function(){
-    $("#header").load("/templates/header.html");
+    $("#header").load("../templates/header.html");
 
     });
 
