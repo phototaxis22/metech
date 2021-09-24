@@ -1,0 +1,864 @@
+body, p, h1, h2, h3, h4, h5, .heading-sub {
+  font-family: 'tbudrgothic-std', 'meiryo', 'ヒラギノ角ゴ pro w3', 'hiragino kaku gothic pro', sans-serif;
+  color: #4d1f0e;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5 {
+	font-weight: 700;
+}
+
+@font-face {
+  font-family: 'APJapanesefontT';
+  src: url(../fonts/APJapanesefontT.ttf);
+}
+
+.logoname {
+  font-family:'APJapanesefontT';
+	font-size: 2.5rem;
+}
+
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+h4, h5 {
+	margin-bottom: 0.5rem;
+}
+
+h5.arrow::before {
+  font-family: FontAwesome;
+  content: "\f138";
+  padding-right: 5px;	
+}
+
+a {
+  color: #4d1f0e;
+}
+
+a:hover {
+  color: rgb(255, 105, 94);
+  text-decoration: none;
+}
+
+/* ヘッダー固定 */
+/*#header {
+    transition: all 0.5s;
+    background: #fff;
+    z-index: 997;
+    padding: 15px 0;
+	box-shadow: 0px 2px 10px 5px rgba(0,0,0,0.2);
+	
+}*/
+
+
+.navbar-light .navbar-nav .nav-link {
+  color: #4d1f0e;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+  color: #ff695e;}
+
+
+.dropdown-menu {
+  color: #4d1f0e;
+  border: 1px solid rgba(77, 31, 14, 0.15);
+  border-radius: 0;
+}
+
+.dropdown-item {
+  color: #4d1f0e;
+}
+
+
+.dropdown-item:hover, .dropdown-item:focus {
+  color: #ff695e;
+  background-color: #fff;
+}
+
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.carousel-content {
+  text-align: center;
+  color: white;
+
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 0.8rem;
+}
+
+h2.deco {
+	position:relative;
+	line-height:3em;
+
+}
+
+h2.deco::before {
+	position:absolute;
+  	top: 10%;
+	left:30%;
+	content:"";
+	display:inline-block;
+	width:3em;
+	height:3em;
+	background:url(../images/deco_l.png) no-repeat;
+	background-size:contain;
+}
+
+h2.deco::after {
+	position:absolute;
+    top: 10%;
+	right:30%;
+	content:"";
+	display:inline-block;
+	width:3em;
+	height:3em;
+	background:url(../images/deco_r.png) no-repeat;
+	background-size:contain;
+}
+
+.border-top {
+  border-top: 2px solid rgb(255, 255, 255)!important;
+}
+
+
+/*--------------------------------------------------
+#　Top/メニューのレイアウト
+--------------------------------------------------*/
+.card {
+  border: 0px;
+  border-radius: 0.25rem;
+}
+
+
+.card-deck .card {
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.1);
+    padding:10px;
+    background-color:#fff;
+    cursor:pointer;
+}
+
+.card-deck .card p.image {
+  overflow:hidden;
+  text-align: center;
+  margin: 16px;
+}
+
+.card-deck .card p.image img {
+    transition:transform 0.3s;
+}
+
+.card-deck .card:hover p.image img {
+  transform:scale(1.2);
+}
+
+/*--------------------------------------------------
+#　Top/メニューのレイアウト1
+--------------------------------------------------*/
+.menu {
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
+}
+
+.menu .menu-img {
+  position: relative;
+  overflow: hidden;
+  transition:transform 0.3s;
+
+}
+
+.menu .menu-img:hover {
+  transform:scale(1.2);
+
+}
+
+.menu .menu-info {
+  padding: 25px 15px;
+}
+
+
+.instagram-image {
+  /*width:  200px;
+  height: 200px;*/
+  border-radius: 50%;
+  background-position: center;
+  border: 1px solid rgba(77, 31, 14, 0.15); /* 枠線を付加 */
+}
+
+
+.instagram_text {
+	font-size: 0.8rem;
+	position: absolute;
+	top: 40px;
+	left: 60px;
+}
+
+
+.hukidashi {
+	width: 40%;
+}
+
+img.deco1 {
+	content:"";
+	display:inline-block;
+	width:3em;
+	height:3em;
+    margin-right: 0.5rem;
+}
+
+.btn-inquiry {
+color: white;
+background-color: #3dbf87;
+width: 25%;
+margin-right: 0.2rem;
+} 
+
+.btn-inquiry:hover {
+color: #4d1f0e;
+text-decoration: none;
+background-color: #aae1c8;
+
+}
+
+.btn-reserv {
+color: white;
+background-color: #ff9191;
+width: 25%;
+margin-left: 0.2rem;
+}   
+
+.btn-reserv:hover {
+color: #4d1f0e;
+text-decoration: none;
+background-color: #fdcece;
+
+}
+
+.btn:focus, .btn.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+
+.inquiry-box {
+	margin-top: 3rem;
+}
+
+#address .btn-inquiry {
+color: white;
+background-color: #3dbf87;
+width: 40%;
+margin-right: 0.2rem;
+}   
+
+#address .btn-inquiry:hover {
+color: #4d1f0e;
+text-decoration: none;
+background-color: #aae1c8;
+
+}
+
+#address .btn-reserv {
+color: white;
+background-color: #ff9191;
+width: 40%;
+margin-left: 0.2rem;
+}   
+
+#address .btn-reserv:hover {
+color: #4d1f0e;
+text-decoration: none;
+background-color: #fdcece;
+
+}
+
+#address .btn:focus, .btn.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+
+
+
+
+footer {
+  background-color: #fbebe5!important;
+}
+
+
+/*--------------------------------------------------
+#　Top/お問い合わせの背景設定
+--------------------------------------------------*/
+.bg_inquiry {
+  background: url("../images/bg.jpg") no-repeat center center;
+  background-size:cover;
+
+}
+
+
+.inquiry_container {
+	width: 80%;
+	background-color: white;
+	border-radius: 5px;
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.1);
+	padding: 1rem;
+}
+
+
+
+/*--------------------------------------------------
+#　Top/headerの画像
+--------------------------------------------------*/
+
+.bg_img1{
+  background-color: rgba(255,247,247,1);
+  width: 100%;
+  background-position:50%;
+  position: relative;
+  padding: 15rem 0;
+}
+
+
+.bg_img1::after {
+  content: '';
+  background: url("../images/top1.jpg") no-repeat center center; 
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-size:cover;
+  opacity: 90%;
+
+}
+
+.bg_img2{
+  background-color: rgba(255,222,222,1);
+  width: 100%;
+  background-position:50%;
+  position: relative;
+  padding: 15rem 0;
+}
+
+.bg_img2::after {
+  content: '';
+  background: url("../images/top2.jpg") no-repeat center center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-size:cover;
+  opacity: 90%;
+
+}
+
+.bg_img3{
+  background-color: rgba(255,233,233,1);
+  width: 100%;
+  background-position:50%;
+  position: relative;
+  padding: 15rem 0;
+}
+
+.bg_img3::after {
+  content: '';
+  background: url("../images/top3.jpg") no-repeat center center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-size:cover;
+  opacity: 90%;
+
+}
+
+.header h1, p  {
+	position: relative;
+	z-index: 1;
+}
+
+.heading-top {
+	font-size: 3rem;
+	color: white;
+	text-shadow: 1px 1px 3px rgba(117,102,49,0.5); 
+	position: relative;
+	z-index: 1;
+	letter-spacing: 5px;
+}
+
+.heading-top1 {
+	font-size: 1.2rem;
+	font-style: italic;
+	color: white;
+	text-shadow: 1px 1px 3px rgba(117,102,49,0.5); 
+	position: relative;
+	z-index: 1;
+	letter-spacing: 2px;
+}
+
+/*--------------------------------------------------
+#　各ページのヘッダー画像用レイアウト
+--------------------------------------------------*/
+section#bg_sub1, section#bg_sub2, section#bg_sub3, section#bg_sub4, section#bg_sub5 {
+  background-color: rgba(251,235,229,1);
+  width: 100%;
+  background-position:50%;
+  position: relative;
+  padding: 10rem 0;
+  background-attachment: fixed;
+}
+
+
+section#bg_sub1::after {
+  content: '';
+  background: url("../about/img/bg.jpg") no-repeat center center; 
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-size:cover;
+  opacity: 75%;
+  background-attachment: fixed;
+
+}
+
+
+section#bg_sub2::after {
+  content: '';
+  background: url("../menu/img/menu_bg.jpeg") no-repeat center center; 
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-size:cover;
+  opacity: 85%;
+  background-attachment: fixed;
+
+}
+
+
+section#bg_sub3::after {
+  content: '';
+  background: url("../access/img/access_bg.jpg") no-repeat center center; 
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-size:cover;
+  opacity: 85%;
+  background-attachment: fixed;
+
+}
+
+
+section#bg_sub4::after {
+  content: '';
+  background: url("../inquiry/img/inquiry_bg.jpg") no-repeat center center; 
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-size:cover;
+  opacity: 85%;
+  background-attachment: fixed;
+
+}
+
+section#bg_sub5::after {
+  content: '';
+  background: url("../reserve/img/reserve_bg_1.jpg") no-repeat center center; 
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-size:cover;
+  opacity: 85%;
+  background-attachment: fixed;
+
+}
+
+
+
+/*header_sub部分の元設定
+section#head-sub1 {
+    background: url(../images/bg.jpg) no-repeat center center;
+	background-size:cover;					縦横比を保持したまま、領域を覆うように背景画像を拡大縮小
+	padding: 10rem 0;
+	background-attachment: fixed;
+}
+
+section#head-sub2 {
+    background: url("../menu/img/menu_bg.jpeg") no-repeat center center;
+	background-size:cover;					/*縦横比を保持したまま、領域を覆うように背景画像を拡大縮小
+	padding: 10rem 0;
+	background-position-y: 70%;
+	background-attachment: fixed;
+}
+
+section#head-sub3 {
+    background: url("../access/img/access_bg.jpg") no-repeat center center;
+	background-size:cover;					/*縦横比を保持したまま、領域を覆うように背景画像を拡大縮小
+	padding: 10rem 0;
+	background-position-y: 70%;
+	background-attachment: fixed;
+}
+
+section#head-sub4 {
+    background: url("../inquiry/img/inquiry_bg.jpg") no-repeat center center;
+	background-size:cover;					/*縦横比を保持したまま、領域を覆うように背景画像を拡大縮小
+	padding: 10rem 0;
+	background-position-y: 70%;
+	background-attachment: fixed;
+}
+
+section#head-sub5 {
+    background: url("../reserve/img/reserve_bg_1.jpg") no-repeat center center;
+	background-size:cover;					/*縦横比を保持したまま、領域を覆うように背景画像を拡大縮小
+	padding: 10rem 0;
+	background-position-y: 70%;
+	background-attachment: fixed;
+}
+*/
+
+
+.heading-sub {
+	font-size: 3rem;
+	color: white;
+	text-shadow: 1px 1px 3px rgba(117,102,49,0.5); 
+	font-weight: bold;
+	position: relative;
+	z-index: 1;
+}
+
+
+
+#footer p {
+	margin: 0px;
+}
+
+
+
+#salon div img {
+  width: 100%!important;
+  height: 250px!important;
+  object-fit: cover!important;
+  padding: 0.5rem;
+
+}
+
+
+.table {
+  width: 60%;
+  margin-bottom: 0;
+  color: #4d1f0e;
+  border-spacing: 0;
+}
+
+.table-1 {
+  width: 100%;
+  margin-bottom: 0;
+  color: #4d1f0e;
+  border-spacing: 0;
+}
+
+.table th,
+.table td {
+  padding: 0.5rem;
+  border: none;
+}
+
+.table td .test {
+	width: 60%;
+}
+
+#facial, #aroma, #slim {
+  background-color: #fbf7f5;
+}
+
+#price {
+  background-color: #fafafa;
+}
+
+/*--------------------------------------------------
+#　料金/container
+--------------------------------------------------*/
+
+#price .aroma-container, .body-container {
+  margin-bottom: 0px;
+  height: 700px;
+}
+
+
+
+#price .aroma-box, .body-box {
+  height: 500px;
+  background-color: brown;
+	
+}
+
+/*--------------------------------------------------
+#　フェイシャル/画像
+--------------------------------------------------*/
+
+#facial img[src$="img/menu_facial.jpg"]	{
+  		width: 70%;
+	}
+
+
+
+/*--------------------------------------------------
+#　料金/フェイシャルメニュー/左
+--------------------------------------------------*/
+
+.facial-pos-l {
+  position: relative;
+  top: -230px;
+  left: 70px;
+}
+
+/*--------------------------------------------------
+#　料金/フェイシャルメニュー/右
+--------------------------------------------------*/
+
+.facial-pos-r {
+  position: relative;
+  top: -230px;
+  left: 90px;	
+  z-index: 2;
+}
+
+
+
+
+/*--------------------------------------------------
+#　料金/メニュー/しらす
+--------------------------------------------------*/
+/*フェイシャル・アロマのしらのコンテナ*/
+.shira-hukidashi {
+  position: relative;
+  top: -140px;
+  z-index: 1;
+  text-align: center;
+}
+
+.shira-hukidashi-1 {
+  position: relative;
+  top: -220px;
+  z-index: 1;
+  text-align: center;
+}
+
+
+/*.shira-text {
+  font-size: 0.8rem;
+  position: absolute;
+  right: -5px;
+  transform: rotate(15deg);
+}*/
+
+.shira-image {
+  position: relative;
+  width: 70%;
+}
+
+
+.shira-container {      /*痩身エステのしらのコンテナ*/
+	position: relative;
+	top: -60px;
+	z-index: 1;
+	text-align:center;
+}
+
+.shira-text-1 {
+  font-size: 0.8rem;
+  position: absolute;
+  transform: rotate(15deg);
+  right: 170px;
+}
+
+.shira-image-1 {
+	width: 20%;
+}
+
+
+/*--------------------------------------------------
+#　アロマ//画像
+--------------------------------------------------*/
+
+#aroma img[src$="img/menu_aroma.jpg"]	{
+  		width: 70%;
+	}
+
+
+/*--------------------------------------------------
+#　料金/アロマメニュー/左
+--------------------------------------------------*/
+
+.aroma-pos-l {
+  position: relative;
+  top: -280px;
+  right: -70px;
+}
+
+
+/*--------------------------------------------------
+#　料金/アロマメニュー/右
+--------------------------------------------------*/
+
+.aroma-pos-r {
+  position: relative;
+  top: -270px;
+  left: 80px;
+  z-index: 2;
+}
+
+/*--------------------------------------------------
+#　料金/テキスト
+--------------------------------------------------*/
+#price .time {
+  font-size: 1.2rem;
+  /*margin-right: 1rem;*/
+}
+
+#price .price {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+
+#price .miniprice {
+  font-size: 1.6rem; 
+  font-weight: bold;	
+}
+
+
+/*--------------------------------------------------
+#　料金/痩身メニュー/左
+--------------------------------------------------*/
+
+.body-pos-l {
+  position: absolute;
+  top: 90px;
+  right: 120px;
+}
+
+/*--------------------------------------------------
+#　料金/痩身メニュー/中央
+--------------------------------------------------*/
+
+
+.body-pos-c {
+  position: relative;
+  text-align: center;	
+  top: -245px;
+  right: 10px;
+}
+
+
+#price img[src$="img/deco_r_c.png"]	{
+  		transform: rotate(-25deg);
+	}
+
+
+
+
+/*--------------------------------------------------
+#　料金/痩身メニュー/右
+--------------------------------------------------*/
+
+.body-pos-r {
+  position: absolute;
+  top: 80px;
+  left: 72px;
+  z-index: 2;
+}
+
+
+
+/*--------------------------------------------------
+#　痩身/キャビリポとスマティ/画像
+--------------------------------------------------*/
+
+#slim img[src$="img/body.png"]	{
+  		width: 60%;
+	}
+
+#slim img[src$="img/menu_slim.jpg"]	{
+  		width: 70%;
+	}
+
+
+/*--------------------------------------------------
+#　Slim/メニュー/きち
+--------------------------------------------------*/
+
+#slim .kichi-container {
+	position: relative;
+	top: 60px;
+}
+
+#slim .kichi {
+  z-index: 1;
+  position: relative;
+}
+
+#slim .kichi-image {
+  position: relative;
+  width: 15%;
+
+}
+
+#slim .kichi-text-l {
+  font-size: 1rem;
+  position: absolute;
+  top: 60px;
+  right: 40px;
+  transform: rotate(-15deg);
+  z-index: 2;
+	
+}
+
+
+#slim .kichi .kichi-text-c {
+  font-size: 0.8rem;
+  margin-bottom: 0px;
+  position: relative;
+  left: 20px;
+}
+
+#slim .kichi-text-r {
+  font-size: 1rem;
+  position: absolute;
+  top: 60px;
+  right: 150px;
+  transform: rotate(15deg);
+}
+
+
+
