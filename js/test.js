@@ -4,7 +4,7 @@ function ShowAlart() {
     }
 
 $(function(){
-    $("#header").load("./header.html");
+    $("#header").load("https://phototaxis22.github.io/metech/templates/header.html");
 
     });
 
