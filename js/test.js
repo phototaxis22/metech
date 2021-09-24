@@ -8,10 +8,10 @@ $(function(){
 
     });
 
-    $(function(){
-        $("#footer").load("https://phototaxis22.github.io/metech/templates/footer.html");
-    
-        });
+$(function(){
+    $("#footer").load("https://phototaxis22.github.io/metech/templates/footer.html");
+
+    });
     
     $(document).ready(function(){
         $("p").css("color", "red");
