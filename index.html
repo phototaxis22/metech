@@ -230,13 +230,13 @@
     <script type="text/javascript" src="js/test.js"></script>
 
   	<script>
-$('form').on('submit', (event) => {
-  const $button = $(event.target).find('button')
-
-  $button.prop('disabled', true)
-    .html('<i class="fas fa-spinner fa-spin"></i>')
-})
-  	</script>
+			const submit_button = document.getElementById("submit_button");
+			submit_button.addEventListener("click", function() {
+			$('#submit_button').html('&emsp;<i class="fa fa-spinner fa-pulse fa-fw"></i>&thinsp;送信中…&emsp;');
+			//$("#submit_button").prop("disabled", true); // Chromeでは送信されない問題あり
+			$('#submit_button').css({ 'pointerActions' : 'none' }); // クリックを無効にする
+		}); 
+ 	</script>
 
 
 </body>
