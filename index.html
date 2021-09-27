@@ -158,6 +158,46 @@
 				</div>
 		</section>
 
+		<div class="container">
+		<form class="d-block mx-auto form_box" action="" method="post">
+			<input type="hidden" name="_to" value="spacerounder@gmail.com">
+			<div class="form-row">
+				<div class="col-12 has-error">
+					<label for="InputName" class="text_strong">氏名*</label>
+					<input type="name" class="form-control" id="InputName" aria-describedby="emailHelp" required v-model="contact.name">
+				</div>
+				<div class="col-12 has-error">
+					<label for="InputEmail" class="text_strong">メールアドレス*</label>
+					<input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" required v-model="contact.email">
+				</div>
+				<div class="col-12 has-error">
+					<label for="InputDetail" class="text_strong">お問い合わせの種類<span class="small">(複数選択可)</span>*</label>
+					<div class="custom-control custom-checkbox">
+						<input type="checkbox" class="custom-control-input" id="customCheck1" v-model="contact.inquiries" value="platform">
+						<label class="custom-control-label" for="customCheck1">弊社ECプラットフォームに関するご相談</label>
+					</div>
+					<div class="custom-control custom-checkbox">
+						<input type="checkbox" class="custom-control-input" id="customCheck2" v-model="contact.inquiries" value="operation">
+						<label class="custom-control-label" for="customCheck2">貴社ECサイトの運用に関するご相談</label>
+					</div>
+					<div class="custom-control custom-checkbox">
+						<input type="checkbox" class="custom-control-input" id="customCheck3" v-model="contact.inquiries" value="overseas">
+						<label class="custom-control-label" for="customCheck3">海外Eコマースの構築に関するご相談</label>
+					</div>
+					<div class="custom-control custom-checkbox">
+						<input type="checkbox" class="custom-control-input" id="customCheck4" v-model="contact.inquiries" value="others">
+						<label class="custom-control-label" for="customCheck4">その他</label>
+					</div>
+				</div>
+				<div class="col-12 mt-5">
+					<button type="submit" class="btn btn_submit btn-lg btn-block mx-auto w-50">送信</button>
+				</div>
+			</div>
+		</form> 
+		</div>
+
+
+
   </main>
   <footer id="footer" class="py-5"></footer>
 
