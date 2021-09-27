@@ -232,14 +232,12 @@
 	function checkNijyuSubmit(){
 	if(isSubmit){
 		//フラグがtrueならアラートを表示してsubmitしない
-		alert("送信しました");
 
 		return false;
 	}else{
 		//フラグがtrueでなければ、フラグをtrueにした上でsubmitする
-
+		msg("送信しました");
 		isSubmit = true;
-
 		return true;
 	}
 }
