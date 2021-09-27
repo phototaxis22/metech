@@ -190,12 +190,23 @@
 					</div>
 				</div>
 				<div class="col-12 mt-5">
-					<button type="submit" class="btn btn_submit btn-lg btn-block mx-auto w-50">送信</button>
+					<button type="submit" class="btn btn-lg btn-dark btn-block mx-auto w-50">送信</button>
 				</div>
 			</div>
 		</form> 
 		</div>
 
+		<form action="https://api.staticforms.xyz/submit" method="post">
+			<input type="text" name="name" placeholder="Your Name">
+			<input type="text" name="email" placeholder="Your Email">
+			<textarea name="message"></textarea>
+			<input type="text" name="honeypot" style="display:none">
+			<input type="hidden" name="accessKey" value="cc4b5a72-ad9e-4b54-a8fa-4c14ee73f7af">
+			<input type="hidden" name="subject" value="Contact us from - example.com">
+			<input type="hidden" name="replyTo" value="@">
+			<input type="hidden" name="redirectTo" value="https://phototaxis22.github.io/metech/">
+			<input type="submit" value="Submit">
+		  </form>
 
 
   </main>
