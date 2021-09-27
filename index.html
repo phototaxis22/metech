@@ -230,13 +230,12 @@
     <script type="text/javascript" src="js/test.js"></script>
 
   	<script>
-	$('button').on('click', (event) => {
-		const $button = $(event.target)
-	  
-		$button.prop('disabled', true)
-		  .closest('form').submit()
-		  .html('<i class="fas fa-spinner fa-spin"></i>')
-	  })
+$('form').on('submit', (event) => {
+  const $button = $(event.target).find('button')
+
+  $button.prop('disabled', true)
+    .html('<i class="fas fa-spinner fa-spin"></i>')
+})
   	</script>
 
 
