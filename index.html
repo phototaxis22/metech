@@ -231,11 +231,12 @@
 		function checkNijyuSubmit(){
 		  if(isSubmit){
 			//フラグがtrueならアラートを表示してsubmitしない
-			alert("処理中です。");
+			alert("送信中です。");
 			return false;
 		  }else{
 			//フラグがtrueでなければ、フラグをtrueにした上でsubmitする
 			isSubmit = true;
+			alert("送信中です。");
 			return true;
 		  }
 		}
