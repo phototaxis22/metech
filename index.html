@@ -196,7 +196,7 @@
 		</form> 
 		</div>
 
-		<form action=""  onsubmit="return checkNijyuSubmit();">
+		<form action="" method="post">
 			<input type="text" name="name" placeholder="Your Name">
 			<input type="text" name="email" placeholder="Your Email">
 			<textarea name="message"></textarea>
@@ -225,22 +225,12 @@
     <script type="text/javascript" src="js/test.js"></script>
 
 	<script>
-		//判定用フラグ
-		var isSubmit = false;
-		 
-		function checkNijyuSubmit(){
-		  if(isSubmit){
-			//フラグがtrueならアラートを表示してsubmitしない
-			alert("送信中です。");
-			return false;
-		  }else{
-			//フラグがtrueでなければ、フラグをtrueにした上でsubmitする
-			alert("送信中です。");
+$('form').on('submit', (event) => {
+  const $button = $(event.target).find('button')
 
-			isSubmit = true;
-			return true;
-		  }
-		}
-	</script>
+  $button.prop('disabled', true)
+    .html('<i class="fas fa-spinner fa-spin"></i>')
+})	
+</script>
 </body>
 <!-- InstanceEnd --></html>
