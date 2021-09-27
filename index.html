@@ -196,7 +196,7 @@
 		</form> 
 		</div>
 
-		<form action="https://api.staticforms.xyz/submit" method="post" onsubmit="return checkNijyuSubmit();">
+		<form action="https://api.staticforms.xyz/submit" method="post"  onSubmit="return check()">
 			<input type="hidden" name="accessKey" value="cc4b5a72-ad9e-4b54-a8fa-4c14ee73f7af">
 			<input type="text" name="name" placeholder="Your Name">
 			<input type="text" name="email" placeholder="Your Email">
@@ -226,21 +226,20 @@
     <script type="text/javascript" src="js/test.js"></script>
 
 	<script>
-	//判定用フラグ
-	var isSubmit = false;
-	
-	function checkNijyuSubmit(){
-	if(isSubmit){
-		//フラグがtrueならアラートを表示してsubmitしない
+function check(){
 
-		return false;
-	}else{
-		//フラグがtrueでなければ、フラグをtrueにした上でsubmitする
-		msg("送信しました");
-		isSubmit = true;
-		return true;
-	}
+if(window.confirm('送信してよろしいですか？')){ // 確認ダイアログを表示
+
+	return true; // 「OK」時は送信を実行
+
 }
-</script>
+else{ // 「キャンセル」時の処理
+
+	window.alert('キャンセルされました'); // 警告ダイアログを表示
+	return false; // 送信を中止
+
+}
+
+}</script>
 </body>
 <!-- InstanceEnd --></html>
