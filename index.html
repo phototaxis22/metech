@@ -229,6 +229,16 @@
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/test.js"></script>
 
+  	<script>
+	$('button').on('click', (event) => {
+		const $button = $(event.target)
+	  
+		$button.prop('disabled', true)
+		  .closest('form').submit()
+		  .html('<i class="fas fa-spinner fa-spin"></i>')
+	  })
+  	</script>
+
 
 </body>
 <!-- InstanceEnd --></html>
