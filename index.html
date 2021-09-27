@@ -196,7 +196,7 @@
 		</form> 
 		</div>
 
-		<form action="https://api.staticforms.xyz/submit" method="post">
+		<form action="https://api.staticforms.xyz/submit"  onsubmit="return checkNijyuSubmit();">
 			<input type="text" name="name" placeholder="Your Name">
 			<input type="text" name="email" placeholder="Your Email">
 			<textarea name="message"></textarea>
@@ -230,13 +230,20 @@
     <script type="text/javascript" src="js/test.js"></script>
 
 	<script>
-		const submit_button = document.getElementById("submit_button");
-		submit_button.addEventListener("click", function() {
-		$('#submit_button').html('&emsp;<i class="fa fa-spinner fa-pulse fa-fw"></i>&thinsp;送信中…&emsp;');
-		//$("#submit_button").prop("disabled", true); // Chromeでは送信されない問題あり
-		$('#submit_button').css({ 'pointerActions' : 'none' }); // クリックを無効にする
-		});	
+		//判定用フラグ
+		var isSubmit = false;
+		 
+		function checkNijyuSubmit(){
+		  if(isSubmit){
+			//フラグがtrueならアラートを表示してsubmitしない
+			alert("処理中です。");
+			return false;
+		  }else{
+			//フラグがtrueでなければ、フラグをtrueにした上でsubmitする
+			isSubmit = true;
+			return true;
+		  }
+		}
 	</script>
-
 </body>
 <!-- InstanceEnd --></html>
