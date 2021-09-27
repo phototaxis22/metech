@@ -196,7 +196,7 @@
 		</form> 
 		</div>
 
-		<form action="https://phototaxis22.github.io/metech/" method="post">
+		<form action="https://phototaxis22.github.io/metech/" method="post" onsubmit="return checkNijyuSubmit();">
 			<input type="text" name="name" placeholder="Your Name">
 			<input type="text" name="email" placeholder="Your Email">
 			<textarea name="message"></textarea>
@@ -225,12 +225,21 @@
     <script type="text/javascript" src="js/test.js"></script>
 
 	<script>
-$('form').on('submit', (event) => {
-  const $button = $(event.target).find('button')
+	//判定用フラグ
+	var isSubmit = false;
+	
+	function checkNijyuSubmit(){
+	if(isSubmit){
+		//フラグがtrueならアラートを表示してsubmitしない
+		return false;
+	}else{
+		//フラグがtrueでなければ、フラグをtrueにした上でsubmitする
+		isSubmit = true;
+		alert("処理中です。");
 
-  $button.prop('disabled', true)
-    .html('<i class="fas fa-spinner fa-spin"></i>')
-})	
+		return true;
+	}
+}
 </script>
 </body>
 <!-- InstanceEnd --></html>
