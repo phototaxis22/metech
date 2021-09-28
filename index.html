@@ -35,22 +35,18 @@
 	</script>
 
 <script>
-	//判定用フラグ
-	var isSubmit = false;
-	 
 	function checkNijyuSubmit(){
-	  if(isSubmit){
-		//フラグがtrueならアラートを表示してsubmitしない
-		alert("処理中です。");
+	  var obj = document.getElementById("btnSubmit");
+	  if(obj.disabled){
+		//ボタンがdisabledならsubmitしない
 		return false;
 	  }else{
-		//フラグがtrueでなければ、フラグをtrueにした上でsubmitする
-		isSubmit = true;
+		//ボタンがdisabledでなければ、ボタンをdisabledにした上でsubmitする
+		obj.disabled = true;
 		return true;
 	  }
 	}
-	</script>
-	
+	</script>	
  
 	<title>ねこと癒しのリラクゼーションサロン | ねこのいえ</title>
 
