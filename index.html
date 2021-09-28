@@ -34,7 +34,23 @@
 	  })(document);
 	</script>
 
-
+<script>
+	//判定用フラグ
+	var isSubmit = false;
+	 
+	function checkNijyuSubmit(){
+	  if(isSubmit){
+		//フラグがtrueならアラートを表示してsubmitしない
+		alert("処理中です。");
+		return false;
+	  }else{
+		//フラグがtrueでなければ、フラグをtrueにした上でsubmitする
+		isSubmit = true;
+		return true;
+	  }
+	}
+	</script>
+	
  
 	<title>ねこと癒しのリラクゼーションサロン | ねこのいえ</title>
 
@@ -225,22 +241,6 @@
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/test.js"></script>
 
-<script>
-//判定用フラグ
-var isSubmit = false;
- 
-function checkNijyuSubmit(){
-  if(isSubmit){
-    //フラグがtrueならアラートを表示してsubmitしない
-    alert("処理中です。");
-    return false;
-  }else{
-    //フラグがtrueでなければ、フラグをtrueにした上でsubmitする
-    isSubmit = true;
-    return true;
-  }
-}
-</script>
 
 </body>
 <!-- InstanceEnd --></html>
