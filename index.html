@@ -196,7 +196,7 @@
 		</form> 
 		</div>
 
-		<form action="https://api.staticforms.xyz/submit" method="post"  onSubmit="return check()">
+		<form action="https://api.staticforms.xyz/submit" method="post" onsubmit="return checkNijyuSubmit()">
 			<input type="hidden" name="accessKey" value="cc4b5a72-ad9e-4b54-a8fa-4c14ee73f7af">
 			<input type="text" name="name" placeholder="Your Name">
 			<input type="text" name="email" placeholder="Your Email">
@@ -225,20 +225,22 @@
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/test.js"></script>
 
-	<script>
-function check(){
-
-if(window.confirm('送信してよろしいですか？')){ // 確認ダイアログを表示
-
-	return true; // 「OK」時は送信を実行
-
+<script>
+//判定用フラグ
+var isSubmit = false;
+ 
+function checkNijyuSubmit(){
+  if(isSubmit){
+    //フラグがtrueならアラートを表示してsubmitしない
+    alert("処理中です。");
+    return false;
+  }else{
+    //フラグがtrueでなければ、フラグをtrueにした上でsubmitする
+    isSubmit = true;
+    return true;
+  }
 }
-else{ // 「キャンセル」時の処理
+</script>
 
-	return false; // 送信を中止
-
-}
-
-}</script>
 </body>
 <!-- InstanceEnd --></html>
