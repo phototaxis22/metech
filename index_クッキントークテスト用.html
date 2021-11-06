@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="ja"><!-- InstanceBegin template="/Templates/Templates.dwt" codeOutsideHTMLIsLocked="false" -->
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<!-- fancybox CSS -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+
+	<!-- Custom stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	  
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+	  
+	<!-- FontAwesome  -->	
+	<script src="https://kit.fontawesome.com/7afff3c3cd.js" crossorigin="anonymous"></script>
+	  
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker.min.css">
+
+	<!-- AdobeFonts -->
+	<script>
+	  (function(d) {
+		var config = {
+		  kitId: 'lhq6cmj',
+		  scriptTimeout: 3000,
+		  async: true
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	  })(document);
+	</script>
+
+<script>
+	function checkNijyuSubmit(){
+	  var obj = document.getElementById("btnSubmit");
+	  if(obj.disabled){
+		//ボタンがdisabledならsubmitしない
+		return false;
+	  }else{
+		//ボタンがdisabledでなければ、ボタンをdisabledにした上でsubmitする
+		obj.disabled = true;
+		return true;
+	  }
+	}
+	</script>	
+
+<script>
+	$(function() {
+	  $('input[name="datetimes"]').daterangepicker({
+		timePicker: true,
+		startDate: moment().startOf('hour'),
+		endDate: moment().startOf('hour').add(32, 'hour'),
+		locale: {
+		  format: 'M/DD hh:mm A'
+		}
+	  });
+	});
+</script>
+ 
+	<title>ねこと癒しのリラクゼーションサロン | ねこのいえ</title>
+
+
+
+  </head>
+
+  <body>
+
+	<section class="py-5 bg-info">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 p-2">
+					<div class="bg-light p-2" style="border-radius: 10px;">
+						<div class="row align-item-center">
+							<div class="col-4 col-md-12 align-self-center imgBox">
+								<img src="images/test.png" class="img-fluid d-block mx-auto testimg" alt="facial">
+							</div>
+							<div class="col-8 col-md-12 text-center align-self-center pl-0 lesson_menu">
+								<p class="mb-2">台湾料理</p>
+								<p class="mb-0">【韓国語クラス】イェウン先生：チェユックボックン（甘辛豚肉炒め）＆もやしナムル</p>
+							</div>
+						</div>
+						<div class="lesson_detail mt-3">
+							<p>Clare 先生</p>
+							<p>2021-10-27(水)14:30〜16:30</p>
+							<p>沖縄おもろまちスタジオ</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 p-2">
+					<div class="bg-light p-2" style="border-radius: 10px;">
+						<div class="row">
+							<div class="col-5 col-md-12 align-self-center">
+								<img src="images/test.png" class="img-fluid d-block mx-auto" alt="facial">
+							</div>
+							<div class="col-7 col-md-12 text-center align-self-center">
+								<p>台湾料理</p>
+								<p>【中国語クラス/中級以上】台灣紅燒牛肉麵（台湾のコク旨牛肉麺）</p>
+							</div>
+						</div>
+						<div class="">
+							<p>Clare 先生</p>
+							<p>2021-10-27(水)14:30〜16:30</p>
+							<p>沖縄おもろまちスタジオ</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 p-2">
+					<div class="bg-light p-2" style="border-radius: 10px;">
+						<div class="row">
+							<div class="col-5 col-md-12 align-self-center">
+								<img src="images/test.png" class="img-fluid d-block mx-auto" alt="facial">
+							</div>
+							<div class="col-7 col-md-12 text-center align-self-center">
+								<p>台湾料理</p>
+								<p>【中国語クラス/中級以上】台灣紅燒牛肉麵（台湾のコク旨牛肉麺）</p>
+							</div>
+						</div>
+						<div class="">
+							<p>Clare 先生</p>
+							<p>2021-10-27(水)14:30〜16:30</p>
+							<p>沖縄おもろまちスタジオ</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="album py-5 bg-light">
+		<div class="container">
+			<div class="card-deck">
+				<div class="card" style="border-radius: 10px!important;">
+					<div class="row">
+						<div class="col-5 col-md-12">
+							<img src="images/facial.jpg" class="img-fluid d-block mx-auto" alt="facial" style="width: 150px;">
+						</div>
+						<div class="col-7 col-md-12 text-center">
+							<div class="card-body">
+								<h5 class="card-title text-center">台湾料理</h5>
+								<p class="card-text">【中国語クラス/中級以上】台灣紅燒牛肉麵（台湾のコク旨牛肉麺）</p>
+							</div>
+						</div>
+					</div>
+					<div class="card-body">
+						<p class="card-text">Clare 先生</p>
+						<p class="card-text">2021-10-27(水)14:30〜16:30</p>
+						<p class="card-text">沖縄おもろまちスタジオ</p>
+					</div>
+				</div>
+				<div class="card" style="border-radius: 10px!important;">
+					<img src="images/facial.jpg" class="img-fluid d-block mx-auto" alt="facial" style="width: 150px;">
+				  <div class="card-body">
+					<h5 class="card-title text-center">台湾料理</h5>
+					<p class="card-text">【中国語クラス/中級以上】台灣紅燒牛肉麵（台湾のコク旨牛肉麺）</p>
+					<p class="card-text">Clare 先生</p>
+					<p class="card-text">2021-10-27(水)14:30〜16:30</p>
+					<p class="card-text">沖縄おもろまちスタジオ</p>
+				  </div>
+				</div>
+				<div class="card" style="border-radius: 10px!important;">
+					<img src="images/facial.jpg" class="img-fluid d-block mx-auto" alt="facial" style="width: 150px;">
+				  <div class="card-body">
+					<h5 class="card-title text-center">台湾料理</h5>
+					<p class="card-text">【中国語クラス/中級以上】台灣紅燒牛肉麵（台湾のコク旨牛肉麺）</p>
+					<p class="card-text">Clare 先生</p>
+					<p class="card-text">2021-10-27(水)14:30〜16:30</p>
+					<p class="card-text">沖縄おもろまちスタジオ</p>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<input class="form-control text-box single-line" type="text" id="inputText3" />
+	<input type="text" name="datefilter" value="" /><!--こｔっち-->
+
+
+
+	<section style="background-color: #FAF6ED;">
+	<div class="container testBox py-5">
+		<div class="item" style="border-radius:10px; background-color: white;">
+			<div class="lesson_img">
+				<img src="images/test_1.png" class="img-fluid d-block mx-auto" alt="facial">
+			</div>
+			<div class="lesson_title">
+				<p class="mb-2" style="font-weight: bold;">韓国料理</p>
+				<p class="mb-0" style="font-weight: bold; color: #f78f52; font-size: 14px;">【韓国語クラス】ノックトゥビンデトック（緑豆チヂミ）</p>
+			</div>
+			<div class="lesson_option" style="font-size: 14px;">
+				<p><img src="images/icon_teacher.svg" alt="アイコン" class="icon_img">ジョンミン 先生</p>
+				<p><img src="images/icon_calender.svg" alt="アイコン" class="icon_img">021-11-04(木)</p>
+				<p><img src="images/schedule_black_24dp.svg" alt="アイコン" class="icon_img">10:30〜12:30</p>
+				<p><img src="images/icon_studio.svg" alt="アイコン" class="icon_img">沖縄おもろまちスタジオ</p>
+			</div>
+		</div>
+		
+
+		
+		<div class="item" style="border-radius:10px; background-color: white;">
+			<div class="lesson_img">
+				<img src="images/test_2.png" class="img-fluid d-block mx-auto" alt="facial">
+			</div>
+			<div class="lesson_title">
+				<p class="mb-2" style="font-weight: bold;">インド料理</p>
+				<p class="mb-0" style="font-weight: bold; color: #f78f52; font-size: 14px;">【英語クラス | 中上級】サンバール（たっぷり野菜のスパイス煮込みスープ） </p>
+			</div>
+			<div class="lesson_option" style="font-size: 14px;">
+				<p><img src="images/icon_teacher.svg" alt="アイコン" class="icon_img">Shukla 先生</p>
+				<p><img src="images/icon_calender.svg" alt="アイコン" class="icon_img">2021-11-02(火)</p>
+				<p><img src="images/schedule_black_24dp.svg" alt="アイコン" class="icon_img">13:30〜15:30</p>
+				<p><img src="images/icon_studio.svg" alt="アイコン" class="icon_img">沖縄おもろまちスタジオ</p>
+			</div>
+		</div>
+		<div class="item" style="border-radius:10px; background-color: white;">
+			<div class="lesson_img">
+				<img src="images/test_3.png" class="img-fluid d-block mx-auto" alt="facial">
+			</div>
+			<div class="lesson_title">
+				<p class="mb-2" style="font-weight: bold;">アフガニスタン料理</p>
+				<p class="mb-0" style="font-weight: bold; color: #f78f52; font-size: 14px;">【英語クラス | 中上級】ボラニ(アフガニスタン風フラットブレッド)</p>
+			</div>
+			<div class="lesson_option" style="font-size: 14px;">
+				<p><img src="images/icon_teacher.svg" alt="アイコン" class="icon_img">Shukla 先生</p>
+				<p><img src="images/icon_calender.svg" alt="アイコン" class="icon_img">2021-11-02(火)</p>
+				<p><img src="images/schedule_black_24dp.svg" alt="アイコン" class="icon_img">13:30〜15:30</p>
+				<p><img src="images/icon_studio.svg" alt="アイコン" class="icon_img">沖縄おもろまちスタジオ</p>
+			</div>
+		</div>
+		<div class="item" style="border-radius:10px; background-color: white;">
+			<div class="lesson_img">
+				<img src="images/test_4.jpg" class="img-fluid d-block mx-auto" alt="facial">
+			</div>
+			<div class="lesson_title">
+				<p class="mb-2" style="font-weight: bold;">キッズレッスン</p>
+				<p class="mb-0" style="font-weight: bold; color: #f78f52; font-size: 14px;">【神戸三宮キッズレッスン】小１～小３・お子様のみ</p>
+			</div>
+			<div class="lesson_option" style="font-size: 14px;">
+				<p><img src="images/icon_teacher.svg" alt="アイコン" class="icon_img">キッズレッスン 先生</p>
+				<p><img src="images/icon_calender.svg" alt="アイコン" class="icon_img">2021-11-06(土)</p>
+				<p><img src="images/schedule_black_24dp.svg" alt="アイコン" class="icon_img">11:30〜12:30</p>
+				<p><img src="images/icon_studio.svg" alt="アイコン" class="icon_img">神戸三宮スタジオ</p>
+			</div>
+		</div>
+	</div>
+	</section>
+
+    <!-- Optional JavaScript -->
+	<script src="/path/to/cdn/jquery.min.js"></script>
+	<script src="Templates/jquery.instagramFeed.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <!-- fancybox -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/test.js"></script>
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+
+	<script>
+		$('#date_sample').datepicker();
+	</script>
+
+<!--こｔっち-->
+	<script type="text/javascript">
+		$(function() {
+		
+		  $('input[name="datefilter"]').daterangepicker({
+				autoApply: true,
+			  autoUpdateInput: false,
+			  locale: {
+				  cancelLabel: 'Clear'
+			  }
+		  });
+		
+		  $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+			  $(this).val(picker.startDate.format('YYYY/MM/DD') + ' - ' + picker.endDate.format('YYYY/MM/DD'));
+		  });
+		
+		  $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+			  $(this).val('');
+		  });
+		
+		});
+		</script>
+
+</body>
+<!-- InstanceEnd --></html>

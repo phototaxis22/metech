@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+.color1 {
+  background-color: green;
+}
+
+.test {
+  width: auto;
+}
+
+
+
+.mobile {
+  display:none;
+}
+
+
+
+
+
+
+@media screen and (min-width: 520px) {
+	/* 520px以上に適用されるCSS（タブレット用） */
+
+
+
+  .color1 {
+    background-color: yellow;
+  }
+  
+
+  .pc {
+    display:none;
+  }
+  
+  .mobile {
+    display: block;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 960px) {
+	/* 960px以上に適用されるCSS（PC用） */
+
+  .color1 {
+    background-color: blue;
+  }
+  
+
+.pc {
+  display:none;
+}
+
+
+
+.mobile {
+  display: block;
+}
+
+
+
+
+
+}

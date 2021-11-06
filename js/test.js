@@ -13,6 +13,10 @@ $(function(){
 
     });
     
-    $(document).ready(function(){
-        $("p").css("color", "red");
-        });
+    //$(document).ready(function(){
+     //   $("p").css("color", "#414649");
+     //   });
+
+
+
+
