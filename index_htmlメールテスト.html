@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="ja"><!-- InstanceBegin template="/Templates/Templates.dwt" codeOutsideHTMLIsLocked="false" -->
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<!-- fancybox CSS -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+
+	<!-- Custom stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	  
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+	  
+	<!-- FontAwesome  -->	
+	<script src="https://kit.fontawesome.com/7afff3c3cd.js" crossorigin="anonymous"></script>
+	  
+	<!-- AdobeFonts -->
+	<script>
+	  (function(d) {
+		var config = {
+		  kitId: 'lhq6cmj',
+		  scriptTimeout: 3000,
+		  async: true
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	  })(document);
+	</script>
+
+<script>
+	function checkNijyuSubmit(){
+	  var obj = document.getElementById("btnSubmit");
+	  if(obj.disabled){
+		//ボタンがdisabledならsubmitしない
+		return false;
+	  }else{
+		//ボタンがdisabledでなければ、ボタンをdisabledにした上でsubmitする
+		obj.disabled = true;
+		return true;
+	  }
+	}
+	</script>	
+ 
+	<title>ねこと癒しのリラクゼーションサロン | ねこのいえ</title>
+
+
+
+  </head>
+
+  <body>
+	<header id="header" class="sticky-top bg-white"></header>
+
+    <section class="header">
+		<div class="carousel slide carousel-fade" data-ride="carousel" data-keyboard="false" data-wrap="true" data-interval="5000">
+			<div class="carousel-inner" role="listbox">
+			  <div class="carousel-item active bg_img1" role="option">
+				<div class="container">
+					<div class="carousel-content">
+						<p class="heading-top1">リラクゼーションサロン</p>
+						<h1 class="heading-top">ねこのいえ</h1> 
+					</div>
+				</div>
+			  </div>
+			  <div class="carousel-item bg_img2" role="option">
+				<div class="container">
+				  <div class="carousel-content">
+					<p class="heading-top1">あなただけの特別な</p>
+					<h1 class="heading-top">完全プライベートの空間</h1> 
+				  </div>
+				</div>
+			  </div>
+			  <div class="carousel-item bg_img3" role="option">
+				<div class="container">
+				  <div class="carousel-content">
+					<p class="heading-top1">いつも頑張っている自分へ</p>
+					<h1 class="heading-top">最上の癒しのご褒美を</h1> 
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</div>
+	</section>
+  <main>
+		<section style="background-color: #fbebe5;">
+			<div class="container text-center py-5">
+				<h2 class="deco">コンセプト</h2>
+				<p>「ねこのいえ」は阪急宝塚線逆瀬川駅より徒歩7分にある女性専用のリラクゼーションサロンです。
+					ねこ好きのオーナーにより実現した究極の癒しの時間と空間...
+					「日頃の疲れから解放されたい、もっとキレイになりたい、ゆったりとした時間を感じたい」
+					お客様のお声にじっくりと寄り添い、一人一人にあった最上の施術を提供します。
+				</p>
+			</div>
+		</section>
+
+
+		<section class="border-top" style="background-color: #fbf7f5;">
+			<div class="container text-center py-5">
+				<h2 class="deco">メニュー</h2>
+				<p class="mb-sm-5">お悩みにぴったり合ったメニューをご提供します。みなさまのご要望に合わせてカスタマイズもできます。</p>
+				<div class="row">
+					<div class="col-md-4 d-flex justify-content-center">
+						<div class="menu">
+						<div class="menu-img">
+						<p><a href="menu/facial.html"><img src="images/facial.jpg" class="img-fluid" alt="facial"></a></p>
+						</div>
+						<div class="menu-info text-left">
+						  <a href="menu/facial.html"><h5 class="arrow">フェイシャル</h5></a>
+						</div>
+						</div>
+					  </div>
+					  <div class="col-md-4 d-flex justify-content-center">
+						<div class="menu">
+						<div class="menu-img">
+						<p><a href="menu/aroma.html"><img src="images/aroma.jpg" class="img-fluid" alt="aroma"></a></p>
+						</div>
+						<div class="menu-info text-left">
+						  <a href="menu/aroma.html"><h5 class="arrow">アロマトリートメント</h5></a>
+						</div>
+						</div>	
+					  </div>
+					  <div class="col-md-4 d-flex justify-content-center">
+						<div class="menu">
+						<div class="menu-img">
+						<p><a href="menu/body.html"><img src="images/body.jpg" class="img-fluid" alt="body"></a></p>
+						</div>
+						<div class="menu-info text-left">
+						  <a href="menu/body.html"><h5 class="arrow">痩身エステ</h5></a>
+						</div>
+						</div>
+					</div>
+				  </div>
+			</div>
+		</section>
+
+		<section class="border-top" style="background-color: #fbfbfb;">
+			<div class="container text-center py-5">
+				<h2 class="deco">Instagram</h2>
+				<p class="mb-sm-5">サロンからのお知らせやオーナーの日常など様々な情報を発信しています。ぜひご確認ください！</p>
+				<p><a href="https://www.instagram.com/neco_no_ie/" target="_blank"><img src="images/IG_Glyph_Fill.png" class="deco1" alt="instagram_icon"></a></p>
+				<p>@neco_no_ie</p>
+				<div class="row no-gutters">
+					<div class="col-md-2 offset-md-5">
+						<p><a href="https://www.instagram.com/neco_no_ie/" target="_blank"><img src="images/instagram.png" class="img-fluid instagram-image" alt="instagram"></a></p>
+					</div>
+					<div class="col-md-5 text-left hukidashi-container" style="position: relative;">
+						<p class="ml-3" style="position: absolute; top: 20px;"><img src="images/deco1.png" class="img-fluid hukidashi" alt="hukidashi"></p><p class="instagram_text">クリックしてにゃ</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="border-top bg_inquiry">
+			<div class="container text-center py-5">
+				<h2 class="deco">お問い合わせ</h2>
+				<div class="center-block mx-auto py-5 inquiry_container">
+					<h5>施術は完全予約制です</h5>
+					<p class="pb-5">どんなことでもお気軽にご相談くださいませ。</p>
+						  <div class="text-center">
+							<a href="inquiry/index.html" class="btn btn-inquiry">お問い合わせ</a>
+							<a href="reserve/index.html" class="btn btn-reserv">ご予約</a>
+						   </div>
+					  </div>
+				</div>
+		</section>
+
+		<div class="container" id="#test">
+		<form class="d-block mx-auto form_box" action="" method="post">
+			<input type="hidden" name="_to" value="spacerounder@gmail.com">
+			<div class="form-row">
+				<div class="col-12 has-error">
+					<label for="InputName" class="text_strong">氏名*</label>
+					<input type="name" class="form-control" id="InputName" aria-describedby="emailHelp" required v-model="contact.name">
+				</div>
+				<div class="col-12 has-error">
+					<label for="InputEmail" class="text_strong">メールアドレス*</label>
+					<input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" required v-model="contact.email">
+				</div>
+				<div class="col-12 has-error">
+					<label for="InputDetail" class="text_strong">お問い合わせの種類<span class="small">(複数選択可)</span>*</label>
+					<div class="custom-control custom-checkbox">
+						<input type="checkbox" class="custom-control-input" id="customCheck1" v-model="contact.inquiries" value="platform">
+						<label class="custom-control-label" for="customCheck1">弊社ECプラットフォームに関するご相談</label>
+					</div>
+					<div class="custom-control custom-checkbox">
+						<input type="checkbox" class="custom-control-input" id="customCheck2" v-model="contact.inquiries" value="operation">
+						<label class="custom-control-label" for="customCheck2">貴社ECサイトの運用に関するご相談</label>
+					</div>
+					<div class="custom-control custom-checkbox">
+						<input type="checkbox" class="custom-control-input" id="customCheck3" v-model="contact.inquiries" value="overseas">
+						<label class="custom-control-label" for="customCheck3">海外Eコマースの構築に関するご相談</label>
+					</div>
+					<div class="custom-control custom-checkbox">
+						<input type="checkbox" class="custom-control-input" id="customCheck4" v-model="contact.inquiries" value="others">
+						<label class="custom-control-label" for="customCheck4">その他</label>
+					</div>
+				</div>
+				<div class="col-12 mt-5">
+					<button type="submit" class="btn btn-lg btn-dark btn-block mx-auto w-50">送信</button>
+				</div>
+			</div>
+		</form> 
+		</div>
+
+  </main>
+  <footer id="footer" class="py-5"></footer>
+
+
+    <!-- Optional JavaScript -->
+	<script src="/path/to/cdn/jquery.min.js"></script>
+	<script src="Templates/jquery.instagramFeed.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <!-- fancybox -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/test.js"></script>
+
+
+
+
+</body>
+<!-- InstanceEnd --></html>
