@@ -1,0 +1,33 @@
+#container {
+  display: flex; /* flexbox */
+  flex-wrap: wrap; /* 折返し指定 */
+  gap: 0px;
+}
+
+
+
+  #container div {
+    width: calc(100% - 20px); /* gap padding分を引く */
+    padding: 10px;
+    color: #FFF;
+    background: #000;
+  }
+
+
+@media screen and (min-width: 960px) {
+	/* 960px以上に適用されるCSS（PC用） */
+
+  #container {
+
+    gap: 1px;
+  }
+  
+  #container div {
+    width: calc(50% - 22px); /* gap padding分を引く */
+    padding: 10px;
+    color: #FFF;
+    background: #000;
+  }
+  
+
+}

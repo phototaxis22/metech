@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="ja"><!-- InstanceBegin template="/Templates/Templates.dwt" codeOutsideHTMLIsLocked="false" -->
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<!-- fancybox CSS -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+
+	<!-- Custom stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	  
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+	  
+	<!-- FontAwesome  -->	
+	<script src="https://kit.fontawesome.com/7afff3c3cd.js" crossorigin="anonymous"></script>
+	  
+	<!-- AdobeFonts -->
+	<script>
+	  (function(d) {
+		var config = {
+		  kitId: 'lhq6cmj',
+		  scriptTimeout: 3000,
+		  async: true
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	  })(document);
+	</script>
+
+<script>
+	function checkNijyuSubmit(){
+	  var obj = document.getElementById("btnSubmit");
+	  if(obj.disabled){
+		//ボタンがdisabledならsubmitしない
+		return false;
+	  }else{
+		//ボタンがdisabledでなければ、ボタンをdisabledにした上でsubmitする
+		obj.disabled = true;
+		return true;
+	  }
+	}
+	</script>	
+ 
+	<title>ねこと癒しのリラクゼーションサロン | ねこのいえ</title>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap');
+	
+	.box {
+		display: flex;
+		flex-wrap: wrap;
+		row-gap: 10px;
+		width: 50%;
+		overflow: hidden;
+	}
+
+	.box::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+	.innerbox {
+		margin: auto;
+		display: block; 
+		border-radius: 50%; 
+		background: chartreuse; 
+		width: 25px; 
+		height: 25px;
+		position: relative;
+	}
+	.pstyle {
+		margin: 0px;
+		position: absolute; 
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-family: 'Balsamiq Sans', cursive!important;
+		font-size: 22px;
+		color: white;
+		
+	}
+
+
+
+	.innerbox_01 {
+		margin: auto;
+		display: block; 
+		border-radius: 50%; 
+		background: chartreuse; 
+		width: 90px; 
+		height: 90px;
+		position: relative;
+	}
+	.pstyle_01 {
+		margin: 0px;
+		position: absolute; 
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-family: 'Balsamiq Sans', cursive!important;
+		font-size: 22px;
+		color: white;
+		
+	}
+
+	.overlink{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	table td {
+		height: 40px;
+	}
+
+
+	li::before {
+		content: url(images/glyph-logo_May2016.png);
+		vertical-align: middle;
+		width: 10px;
+	}
+
+
+</style>
+
+
+
+  </head>
+
+  <body>
+	<table border="1">
+		<tr>
+			<th>カード番号</th>
+			<td><input type="email" style="width: 200px;"></td>
+		</tr>
+		<tr>
+			<th>有効期限</th>
+			<td>
+				<div>
+					<input type="email" style="width: 50px;">&nbsp;/&nbsp;<input type="email" style="width: 50px;">
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<th>CVV</th>
+			<td><input type="email" style="width: 50px;"></td>
+		</tr>
+		<tr>
+			<th>カード番号</th>
+			<td><input type="email" style="width: 200px;"></td>
+		</tr>
+	</table>
+
+
+	<div style="background-color: aqua; border-radius: 50%; width: 50px; height: 50px; display: flex; justify-content: center; align-items: center;">
+		<div>
+			<a href="#"><p style="margin: 0px;">１</p></a>
+		</div>
+	</div>
+
+
+	<div class="box" style="float: left;">
+		<div style="width: 20%;">
+			<div class="innerbox">
+				<a class="overlink" href="https://www.google.com"><p class="k pstyle">1</p></a>
+			</div>
+		</div>
+		<div style="width: 20%;"><div class="innerbox"><a class="overlink" href="https://www.google.com"><p class="k pstyle">2</p></a></div></div>
+		<div style="width: 20%;"><div class="innerbox"><a class="overlink" href="https://www.google.com"><p class="k pstyle">3</p></a></div></div>
+		<div style="width: 20%;"><div class="innerbox"><a class="overlink" href="https://www.google.com"><p class="k pstyle">4</p></a></div></div>
+		<div style="width: 20%;"><div class="innerbox"><a class="overlink" href="https://www.google.com"><p class="k pstyle">5</p></a></div></div>
+		<div style="width: 20%;"><div class="innerbox"><a class="overlink" href="https://www.google.com"><p class="k pstyle">6</p></a></div></div>
+		<div style="width: 20%;"><div class="innerbox"><a class="overlink" href="https://www.google.com"><p class="k pstyle">7</p></a></div></div>
+		<div style="width: 20%;"><div class="innerbox"><a class="overlink" href="https://www.google.com"><p class="k pstyle">8</p></a></div></div>
+		<div style="width: 20%;"><div class="innerbox"><a class="overlink" href="https://www.google.com"><p class="k pstyle">9</p></a></div></div>
+		<div style="width: 20%;"><div class="innerbox"><a class="overlink" href="https://www.google.com"><p class="k pstyle">10</p></a></div></div>
+	</div>
+
+	<div class="box" style="float: right;">
+		<div style="width: 20%;">
+			<div class="innerbox">
+				<a class="overlink" href="https://www.google.com"><p class="k pstyle">1</p></a>
+			</div>
+		</div>
+		<div style="width: 20%;"><div class="innerbox"><a class="overlink" href="https://www.google.com"><p class="k pstyle">2</p></a></div></div>
+		<div style="width: 20%;"><div class="innerbox"><a class="overlink" href="https://www.google.com"><p class="k pstyle">3</p></a></div></div>
+		<div style="width: 20%;"><div class="innerbox"><a class="overlink" href="https://www.google.com"><p class="k pstyle">4</p></a></div></div>
+		<div style="width: 20%;"><div class="innerbox"><a class="overlink" href="https://www.google.com"><p class="k pstyle">5</p></a></div></div>
+		<div style="width: 20%;"><div class="innerbox"><a class="overlink" href="https://www.google.com"><p class="k pstyle">6</p></a></div></div>
+		<div style="width: 20%;"><div class="innerbox"><a class="overlink" href="https://www.google.com"><p class="k pstyle">7</p></a></div></div>
+		<div style="width: 20%;"><div class="innerbox"><a class="overlink" href="https://www.google.com"><p class="k pstyle">8</p></a></div></div>
+		<div style="width: 20%;"><div class="innerbox"><a class="overlink" href="https://www.google.com"><p class="k pstyle">9</p></a></div></div>
+		<div style="width: 20%;"><div class="innerbox"><a class="overlink" href="https://www.google.com"><p class="k pstyle">10</p></a></div></div>
+	</div>
+
+<div>
+	<div>これはてすとなのです。</div>
+	<div style="display: flex; padding: 10px; border: solid 1px;">
+		
+		<div style="background-color: aqua; flex-basis:50%;">
+			<div><p>これはテスト１</p></div>
+			<div><p>これはテスト１</p></div>
+			<div><p>これはテスト１</p></div>
+			<div><p>これはテスト１</p></div>
+		</div>
+		
+		<div class="box" style="background-color: green; flex-basis:50%;">
+			<div style="width: 20%"><div class="innerbox"><a class="overlink" href="https://www.google.com"><p class="k pstyle">2</p></a></div></div>
+			<div style="width: 20%"><div class="innerbox"><a class="overlink" href="https://www.google.com"><p class="k pstyle">2</p></a></div></div>
+			<div style="width: 20%"><div class="innerbox"><a class="overlink" href="https://www.google.com"><p class="k pstyle">2</p></a></div></div>
+			<div style="width: 20%"><div class="innerbox"><a class="overlink" href="https://www.google.com"><p class="k pstyle">2</p></a></div></div>
+			<div style="width: 20%"><div class="innerbox"><a class="overlink" href="https://www.google.com"><p class="k pstyle">2</p></a></div></div>
+			<div style="width: 20%"><div class="innerbox"><a class="overlink" href="https://www.google.com"><p class="k pstyle">2</p></a></div></div>
+			<div style="width: 20%"><div class="innerbox"><a class="overlink" href="https://www.google.com"><p class="k pstyle">2</p></a></div></div>
+		</div>
+	</div>
+</div>
+
+	<div style="display: flex;">
+		<div style="padding: 20px;">
+		<table border="1">
+			<tr>
+				<td colspan="2">テスト：</td>
+			</tr>
+			<tr>
+				<th>購入履歴：</th>
+				<td>これはテスト</td>
+			</tr>
+			<tr>
+				<th>有効期限：</th>
+				<td>これはテスト</td>
+			</tr>
+			<tr>
+				<th>お支払い方法：</th>
+				<td>これはテスト</td>
+			</tr>
+			<tr>
+				<th>購入店舗：</th>
+				<td>これはテスト</td>
+			</tr>
+		</table>
+		</div>
+
+		<div style="padding: 20px;">
+
+			<div><div class="innerbox"><a class="overlink" href="https://www.google.com"><p class="k pstyle">2</p></a></div></div>
+			<div><div class="innerbox"><a class="overlink" href="https://www.google.com"><p class="k pstyle">2</p></a></div></div>
+			<div><div class="innerbox"><a class="overlink" href="https://www.google.com"><p class="k pstyle">2</p></a></div></div>
+
+		</div>
+
+
+
+
+	</div>
+
+
+	<div class="box">
+		<div>
+			<div class="innerbox_01">
+				<p style="line-height: 10px;" class="pstyle_01">1<br><span style="font-size: 8px;">1</span></p>
+			</div>
+		</div>
+	</div>
+
+
+	<ul>
+		<li class="ten">これはテストです</li>
+	</ul>
+
+	<div id="accordion">
+		<div class="accordion_box">
+			<div class="title">
+				<h2>レッスンの基本情報</h2>
+				<div class="icon-wrap"><span class="icon"></span></div>
+			</div>
+			<div class="innerBox">
+				<p>
+					タイで最も人気の料理のひとつ、ガパオライスの作り方を紹介します。
+					豚ひき肉をバジルや唐辛子、にんにくと一緒に炒めた、スパイシーで香り高い一皿です。
+					ごはんの上にかけてワンプレートごはんにするのはもちろん、副菜にもぴったりですよ。
+					レモンを絞ると鮮やかなブルーから紫色に変化する、バタフライピーレモネードも一緒に作ります。
+				</p>
+			</div>
+		</div>        
+		<div class="accordion_box">
+			<div class="title">
+				<h2>レシピの紹介</h2>
+				<div class="icon-wrap"><span class="icon"></span></div>
+			</div>
+			<div class="innerBox">
+				<p>
+					講師：Mhew先生<br>
+					言語：英語<br>
+					レベル：初級<br>
+					スタジオ：沖縄おもろまちスタジオ<br>
+					持ち物：エプロン
+				</p>
+			</div>
+		</div>  
+		<div class="accordion_box">
+			<div class="title">
+				<h2>注意事項</h2>
+				<div class="icon-wrap"><span class="icon"></span></div>
+			</div>
+			<div class="innerBox">
+				<p>
+					◇レッスン中は、マスクの着用をお願い致します。 <br>
+					◇手洗い、消毒のご協力をお願い致します。 <br>
+					◇発熱、体調不良の症状が出ている場合のレッスン受講はお控えください。 
+				</p>
+			</div>
+		</div>  
+	</div>
+
+	<script>
+		$(function(){
+			$('.title').click(function(){
+				$(this).next('div').slideToggle();
+				$(this).find(".icon").toggleClass('open');
+			});
+		});
+		
+		</script>
+		
+</body>
+<!-- InstanceEnd --></html>
